@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "burger_fries.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

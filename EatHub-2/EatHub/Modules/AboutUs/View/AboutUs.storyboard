@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--About Us Vc-->
+        <scene sceneID="DCT-yK-6qF">
+            <objects>
+                <viewController storyboardIdentifier="AboutUsVc" id="1p6-ht-SFk" customClass="AboutUsVc" customModule="EatHub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hWT-Gj-u43">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1vW-zH-xpr" userLabel="View Status Bar">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UNR-lw-7ZY">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99m-Zm-YpJ">
+                                        <rect key="frame" x="164.5" y="13" width="85" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gV9-QT-VsR">
+                                        <rect key="frame" x="12" y="19.5" width="24" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="Uhx-ck-6yq"/>
+                                            <constraint firstAttribute="width" constant="24" id="Vty-db-ZaN"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" backgroundImage="arrow.left" catalog="system"/>
+                                        <connections>
+                                            <action selector="btnBack:" destination="1p6-ht-SFk" eventType="touchUpInside" id="l1x-3h-LgW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="99m-Zm-YpJ" firstAttribute="centerX" secondItem="UNR-lw-7ZY" secondAttribute="centerX" id="Qbl-yJ-CFM"/>
+                                    <constraint firstAttribute="height" constant="50" id="ZfN-De-NKp"/>
+                                    <constraint firstItem="gV9-QT-VsR" firstAttribute="leading" secondItem="UNR-lw-7ZY" secondAttribute="leading" constant="12" id="bcf-Q6-P9d"/>
+                                    <constraint firstItem="gV9-QT-VsR" firstAttribute="centerY" secondItem="UNR-lw-7ZY" secondAttribute="centerY" constant="4" id="lhg-yC-Rko"/>
+                                    <constraint firstItem="99m-Zm-YpJ" firstAttribute="centerY" secondItem="UNR-lw-7ZY" secondAttribute="centerY" id="m27-yR-nKg"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bho-bv-OCr">
+                                <rect key="frame" x="0.0" y="94" width="414" height="768"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Welcome to [store name], your number one source for all things [product, ie: shoes, bags, dog treats]. We're dedicated to giving you the very best of [product], with a focus on [three characteristics, ie: dependability, customer service and uniqueness.]
+Founded in [year] by [founder's name], [store name] has come a long way from its beginnings in a [starting location, ie: home office, toolshed, Houston, TX.]. When [store founder] first started out, his/her passion for [passion of founder, ie: helping other parents be more eco-friendly, providing the best equipment for his fellow musicians] drove him to [action, ie: do intense research, quit her day job], and gave him the impetus to turn hard work and inspiration into to a booming online store. We now serve customers all over [place, ie: the US, the world, the Austin area], and are thrilled to be a part of the [adjective, ie: quirky, eco-friendly, fair trade] wing of the [industry type, ie: fashion, baked goods, watches] industry.
+
+We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.
+
+Sincerely,
+Name, [title, ie: CEO, Founder, etc.]</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bk0-NC-Fhc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bk0-NC-Fhc" firstAttribute="trailing" secondItem="bho-bv-OCr" secondAttribute="trailing" id="34U-3z-Zq2"/>
+                            <constraint firstItem="bk0-NC-Fhc" firstAttribute="bottom" secondItem="bho-bv-OCr" secondAttribute="bottom" id="9kw-0D-tyw"/>
+                            <constraint firstItem="bk0-NC-Fhc" firstAttribute="trailing" secondItem="1vW-zH-xpr" secondAttribute="trailing" id="BPF-Jx-Ulq"/>
+                            <constraint firstItem="UNR-lw-7ZY" firstAttribute="top" secondItem="bk0-NC-Fhc" secondAttribute="top" id="Hax-ix-EbL"/>
+                            <constraint firstItem="UNR-lw-7ZY" firstAttribute="leading" secondItem="bk0-NC-Fhc" secondAttribute="leading" id="MY5-nz-REB"/>
+                            <constraint firstItem="bho-bv-OCr" firstAttribute="leading" secondItem="bk0-NC-Fhc" secondAttribute="leading" id="NbY-fo-SJc"/>
+                            <constraint firstAttribute="trailing" secondItem="UNR-lw-7ZY" secondAttribute="trailing" id="Ran-Wa-kFR"/>
+                            <constraint firstItem="bho-bv-OCr" firstAttribute="top" secondItem="UNR-lw-7ZY" secondAttribute="bottom" id="c5a-Yo-Pb2"/>
+                            <constraint firstItem="1vW-zH-xpr" firstAttribute="leading" secondItem="bk0-NC-Fhc" secondAttribute="leading" id="kRD-pS-tmw"/>
+                            <constraint firstItem="1vW-zH-xpr" firstAttribute="top" secondItem="hWT-Gj-u43" secondAttribute="top" id="q5O-jT-PYU"/>
+                            <constraint firstItem="1vW-zH-xpr" firstAttribute="bottom" secondItem="UNR-lw-7ZY" secondAttribute="top" id="vbD-YY-4yw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cET-Mn-ro2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1012" y="66"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.left" catalog="system" width="128" height="98"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
